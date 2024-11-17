@@ -5,6 +5,7 @@
 body {
   background-color: rgb(240, 211, 173);
   font-family: 'Arial', sans-serif;
+  margin: 10px;
 
 }
 
@@ -326,6 +327,7 @@ img {
   display: flexbox;
   justify-content: center;
   text-align: center;
+  padding: 0px;
 }
 
 
@@ -346,4 +348,24 @@ img {
 
 .suppliers-item {
   width: 100px;
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 10px 10px 10px;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 40px;
+  padding-bottom: 20px;
+  background-color: rgb(182, 177, 177);
+  mix-blend-mode: multiply;
+  margin: 50px -10px -10px -10px;
+  /* Režim násobit */
+}
+
+.foot-item a,
+.foot-item p {
+  color: rgb(79, 0, 0);
 }
