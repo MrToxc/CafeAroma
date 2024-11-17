@@ -62,8 +62,6 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 10px;
-
-
 }
 
 /* nav li {
@@ -155,10 +153,12 @@ footer ul li a:hover {
 
 /* Styly pro tabulku v jídelním lístku */
 table {
-  width: 100%;
   border-collapse: collapse;
   /* Sloučení rámečků buněk */
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 thead th {
@@ -246,7 +246,7 @@ button:hover {
   gap: 10px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .gallery {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -280,18 +280,56 @@ img {
 
 .logo {
   text-align: center;
-  font-size: 45px;
+  font-size: 10vw;
   font-weight: 100;
+  margin-top: 30px;
   margin-bottom: 20px;
+  font-style: italic;
+  color: chocolate;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    text-align: center;
+    font-size: 65px;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: chocolate;
+  }
 }
 
 .pageHeadline {
   text-align: center;
-  font-size: 26px;
+  font-size: 8vw;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .pageHeadline {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 35px;
+  }
 }
 
 * {
   box-sizing: border-box;
+}
+
+.contentBlock {
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.subHeadline {
+  padding-top: 30px;
+  padding-bottom: 5px;
+  font-weight: 900;
+  font-size: 30px;
 }
