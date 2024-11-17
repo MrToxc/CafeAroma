@@ -335,3 +335,15 @@ img {
   font-weight: 900;
   font-size: 30px;
 }
+
+.suppliers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.suppliers-item {
+  width: 100px;
+}
