@@ -56,17 +56,19 @@ a[target="_blank"]::after {
 /* Styl pro navigační menu */
 nav ul {
   list-style-type: none;
-  /* Odstranění standardních odrážek */
   padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
 
 }
 
-nav li {
-  display: inline;
-  /* Zobrazení položek vedle sebe */
-  margin-right: 15px;
-  /* Mezera mezi položkami */
-}
+/* nav li {
+  display: flex;
+} */
 
 nav a {
   text-decoration: none;
@@ -76,7 +78,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #f0c040;
+  background-color: brown;
+  color: #fff;
   /* Změna barvy pozadí při najetí myší */
 }
 
@@ -101,14 +104,16 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin-right: 20px;
 }
 
 nav ul li a {
+  display: block;
   text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  padding: 10px 15px;
+  padding: 10px 25px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  max-width: 200px;
 }
 
 /* Hover color change */
@@ -271,4 +276,22 @@ img {
   /* Zajištění, že obrázky nepřesáhnou šířku kontejneru */
   height: auto;
   /* Zachování správného poměru stran */
+}
+
+.logo {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.pageHeadline {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+* {
+  box-sizing: border-box;
 }
