@@ -190,10 +190,11 @@ form {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: transparent;
+  border: 0px solid #ddd;
   border-radius: 5px;
 }
+
 
 form div {
   margin-bottom: 15px;
@@ -216,18 +217,19 @@ textarea {
   box-sizing: border-box;
 }
 
+
 /* Zvýraznění aktivního pole */
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  border-color: #007bff;
+  border-color: #491c00;
   outline: none;
 }
 
 /* Styl pro tlačítko odeslání */
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #333;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -235,7 +237,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: chocolate;
 }
 
 
